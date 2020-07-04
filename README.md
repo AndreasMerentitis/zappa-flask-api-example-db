@@ -7,11 +7,9 @@ Zappa Python Serverless Application Example
 To run this app on your local machine follow this process:
 
 ```
-# Clone this repo!
-git clone git@github.com:jensendarren/zappa-flask-hello-world.git
 
 # CD into the directory
-cd zappa-flask-hello-world
+cd zappa-flask-api-example-db
 
 # Create the new virtual environment and then activate it (install Python3 first!)
 python -m venv venv
@@ -58,14 +56,11 @@ After that, you can update your application code with:
 zappa update dev
 ```
 
-### Application Frameworks
+Finally you can remove a deployment like this:
 
-* [Flask](http://flask.pocoo.org/)
-* [Flask RESTful](https://flask-restful.readthedocs.io/en/latest/index.html)
-
-### Serverless Frameworks Used
-
-* [Zappa](https://www.zappa.io/)
+```
+zappa undeploy dev
+```
 
 ### Useful commands
 
@@ -149,5 +144,12 @@ db.session.commit()
 *Registration (lamdba - NOT WORKING NOW DUE TO MISSING RDS)* `curl -d '{"username":"myusername", "password":"mypassword"}' -H "Content-Type: application/json" -X POST https://ENDPOINT.execute-api.ap-southeast-1.amazonaws.com/dev/registration`
 
 *User (lamdba)* `curl https://ENDPOINT.execute-api.ap-southeast-1.amazonaws.com/dev/users/1`
+
+
+# Extending and reusing the basic idea from these sources:
+* https://github.com/jensendarren/zappa-flask-api-example.git
+* https://www.zappa.io/
+* http://flask.pocoo.org/
+* https://flask-restful.readthedocs.io/en/latest/index.html
 
 
