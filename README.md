@@ -56,6 +56,12 @@ After that, you can update your application code with:
 zappa update dev
 ```
 
+In order to debug error message you can do:
+
+```
+zappa tail
+```
+
 Finally you can remove a deployment like this:
 
 ```
