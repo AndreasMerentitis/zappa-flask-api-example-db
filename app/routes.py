@@ -6,7 +6,7 @@ from app.models import User, Post
 
 class PingController(Resource):
     def get(self):
-        return {'pong': 'Welcom to API Example App! This is the MESSAGE: ' + app.config['MESSAGE']}
+        return {'pong': 'Welcome to the API Example App! This is the MESSAGE: ' + app.config['MESSAGE']}
 
 class RegistrationsController(Resource):
     def post(self):
