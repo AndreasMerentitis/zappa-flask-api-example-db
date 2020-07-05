@@ -6,6 +6,7 @@
         "project_name": "apiexample",
         "runtime": "python3.6",
         "s3_bucket": "zappa-ml-1",
+        "slim_handler": true,
         "aws_environment_variables": {
             "MESSAGE": "hello from message set in Lambda via Zappa CONFIG!"
         }
